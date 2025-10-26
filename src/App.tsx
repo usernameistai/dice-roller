@@ -31,9 +31,9 @@ const App = () => {
     <>
       <div 
         className='bg-[#001f24]/80 min-h-screen flex flex-col 
-        items-center gap-6 p-6 text-center'
+        items-center gap-6 p-2 text-center'
       >
-        <center className='rounded pt-5'>
+        <center className='rounded'>
           <h1 
             className='text-white bg-slate-500 text-7xl font-semibold mb-4 
             shadow-xl shadow-teal-400 px-8 py-4 rounded-xl'
