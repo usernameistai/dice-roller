@@ -10,8 +10,6 @@ import Dice6 from './images/Dice6.png';
 const App = () => {
   const dImgs = [ Dice1, Dice2, Dice3, Dice4, Dice5, Dice6 ];
 
-  // const [image, setImage] = useState<string>(dImgs[0]);
-  // const [image2, setImage2] = useState<string>(dImgs[1]);
   const [dice, setDice] = useState<[number, number]>([1, 1]);
   const [rolling, setRolling] = useState(false);
 
@@ -50,7 +48,7 @@ const App = () => {
                       className={`w-56 h-56 shadow-xl shadow-teal-400 rounded-xl transition-transform ${
                         rolling ? 'animate-bounce' : ''
                       }
-                      `}
+                    `}
               />
             ))}
           </div>
@@ -58,7 +56,7 @@ const App = () => {
           <button 
             onClick={rollDice}
               disabled={rolling}
-                className='text-yellow-100 font-bold text-5xl rounded-lg shadow-xl 
+                className='text-yellow-100 w-80 h-24 font-bold text-5xl rounded-lg shadow-xl 
                 shadow-teal-400 mt-10 px-8 py-4 bg-teal-700 hover:bg-teal-400 
                 hover:shadow-none disabled:opacity-50'
           >
@@ -71,15 +69,3 @@ const App = () => {
 }
 
 export default App;
-
-{/* <div className="text-center p-[2rem] m-[1rem] rounded-lg flex flex-row justify-center items-center gap-1">
-  <img 
-    className='h-[300px] w-[300px] bg-white inline-block align-middle p-[1rem]' 
-      src={image}
-  />
-  <div className='w-[5px] inline-block'></div>
-  <img 
-    className='h-[300px] w-[300px] bg-white inline-block align-middle p-[1rem]' 
-      src={image2}
-  />
-</div> */}
