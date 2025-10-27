@@ -35,7 +35,7 @@ const App = () => {
       >
         <center className='rounded'>
           <h1 
-            className='text-white bg-slate-500 text-7xl font-semibold mb-4 
+            className='text-white bg-slate-300/50 text-6xl font-semibold mb-4 
             shadow-xl shadow-teal-400 px-8 py-4 rounded-xl'
           >
             Roll 🎲 Dice
@@ -47,7 +47,7 @@ const App = () => {
                 key={i}
                   src={dImgs[num - 1]} 
                     alt={`Dice ${num}`}
-                      className={`w-64 h-64 shadow-xl shadow-teal-400 rounded-xl transition-transform ${
+                      className={`w-56 h-56 shadow-xl shadow-teal-400 rounded-xl transition-transform ${
                         rolling ? 'animate-bounce' : ''
                       }
                       `}
@@ -58,7 +58,7 @@ const App = () => {
           <button 
             onClick={rollDice}
               disabled={rolling}
-                className='text-yellow-100 font-bold text-4xl rounded-lg shadow-xl 
+                className='text-yellow-100 font-bold text-5xl rounded-lg shadow-xl 
                 shadow-teal-400 mt-10 px-8 py-4 bg-teal-700 hover:bg-teal-400 
                 hover:shadow-none disabled:opacity-50'
           >
